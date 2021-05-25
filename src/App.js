@@ -38,7 +38,6 @@ class App extends React.Component {
                             <Router>
 
                                 <Header auth={this.state.auth} />
-                                {/* <Home /> */}
                                 <Switch>
                                     <Route path="/" exact component={Home} />
                                     <Route path="/test" exact component={Test} />
@@ -50,12 +49,9 @@ class App extends React.Component {
                                     <ProtectedRoute path="/dashboard/*/word-game" component={Mod} isAuth={auth} />
                                     <ProtectedRoute path="/dashboard/*/shop" component={Mod} isAuth={auth} />
                                     <ProtectedRoute path="/dashboard/*/welcome" component={Mod} isAuth={auth} />
-                                    {/* <ProtectedRoute path="/dashboard/:id/shop" exact component={Shop} isAuth={auth} />
-                                <ProtectedRoute path="/dashboard/:id/mod" component={Mod} isAuth={auth} /> */}
-                                    {/* <ProtectedRoute path="/dashboard/123456789/cmd" component={Commands} isAuth={auth} guildID={getParams} /> */}
-                                    {/* <Route path="*" component={ErrPage} /> */}
 
                                 </Switch>
+                                <Footer />
                             </Router >
                         </div>
 
