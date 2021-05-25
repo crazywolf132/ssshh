@@ -1,0 +1,148 @@
+:root {
+    --hover-color: #BE7C00
+}
+
+header {
+    width: 100%;
+    padding: 25px 25px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo_text {
+    font-size: 38px;
+    font-weight: 900;
+    transition: 0.3s;
+}
+
+.logo_text:hover {
+    color: var(--hover-color);
+}
+
+.dropdown_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropdown_wrapper_res {
+    display: none;
+}
+
+.user_avatar, .user_avatar_res {
+    border-radius: 50%;
+    width: 50px;
+    height: auto;
+}
+
+.navbar_child {
+    position: relative;
+    padding: 11px;
+    width: 18%;
+    z-index: 10;
+    border-radius: 10px;
+    margin: 10px;
+    float: right;
+    background-color: #17181B;
+}
+
+.navbar_child a {
+    width: 100%;
+    cursor: pointer;
+    display: block;
+    float: left;
+    padding: 14px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.navbar_child a:hover {
+    background-color: #2E3235;
+}
+
+.navbar_left {
+    display: inline-block;
+}
+
+.navbar_left_child {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.navbar_left_child ul li a {
+    transition: 0.3s;
+}
+
+.navbar_left_child ul li a:hover {
+    color: var(--hover-color);
+}
+
+/* .navbar_left_child a {
+    margin: 0 8px 0;
+    display: inline-block;
+} */
+
+.navbar_left_child ul li {
+    margin: 0 8px 0;
+    display: inline-block;
+}
+
+.navbar_btn, .navbar_btn_res {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.navbar_btn:hover, .navbar_btn_res:hover {
+    color: var(--hover-color);
+}
+
+.navbar_btn {
+    display: block;
+}
+
+#logout {
+    color: rgb(216, 7, 7);
+}
+
+.login_btn {
+    background-color: var(--hover-color);
+    padding: 14px 16px;
+    border-radius: 11px;
+    -webkit-transition: transform 0.2s ease 0s;
+    transition: 0.2s 0s;
+    display: inline-block;
+}
+
+.login_btn:hover {
+    color: white;
+    transform: translateY(4px);
+}
+
+@media only screen and (max-width: 600px) {
+    .navbar_child {
+        margin: 15px 12px 0;
+        width: 93%;
+    }
+    .dropdown_wrapper {
+        display: none;
+    }
+    .navbar_btn_res, .user_avatar_res {
+        display: inline-block;
+    }
+    .dropdown_wrapper_res {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .navbar_left_child {
+        display: none;
+    }
+}

@@ -1,0 +1,53 @@
+.cmds_wrapper {
+    width: 80%;
+    display: flex;
+    margin: 2vh auto 0;
+    flex-wrap: wrap;
+}
+
+.cmd_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 31%;
+    height: 150px;
+    margin: 10px;
+    border-radius: 8px;
+    background-color: #2d384a;
+    -webkit-transition: transform 0.2s ease 0s;
+    transition: 0.2s 0s;
+    padding: 19px;
+}
+
+.cmd_content {
+    margin-left: 21px;
+}
+
+.cmd_wrapper img {
+    width: 80px;
+    height: auto;
+}
+
+.cmd_header {
+    margin: 20vh auto 0;
+}
+
+.cmd_wrapper p {
+    font-size: 15px;
+    color: rgb(138, 138, 138);
+}
+
+.cmd_wrapper:hover {
+    transform: translateY(11px);
+}
+
+@media only screen and (max-width: 600px) {
+    .cmd_wrapper {
+        width: 90%;
+        /* margin: 0 auto 0; */
+    }
+}
+
+.block {
+    display: block;
+}

@@ -1,0 +1,92 @@
+.guild_container {
+    width: 90%;
+    display: block;
+    margin: 17vh auto 0;
+}
+
+.guild_wrapper {
+    text-align: center;
+    position: relative;
+    z-index: -2;
+    width: 21%;
+    margin: 20px;
+    background-color: #2d384a;
+    height: 300px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    border-radius: 6px;
+    -webkit-transition: transform 0.2s ease 0s;
+    transition: 0.2s 0s;
+}
+
+.guild_container h1 {
+    text-align: center;
+    position: relative;
+    z-index: 0;
+}
+
+.guild_wrapper img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.guild_wrapper a {
+    cursor: pointer;
+    display: block;
+    width: 60%;
+    margin: 15px auto 0;
+    padding: 14px 17px;
+    background-color: #20639b;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.guild_wrapper a:hover {
+    background-color: #d68d04;
+}
+
+.guild_wrapper h4 {
+    display: block;
+    margin: 15px 0 0;
+}
+
+.guild_wrapper:hover {
+    transform: translateY(15px);
+}
+
+#notFoundBot {
+    background-color: rgb(37, 37, 37);
+}
+
+#notFoundBot:hover {
+    background-color: #d68d04;
+}
+
+.no_icon {
+    width: 100px;
+    border: whitesmoke solid 2px;
+    border-radius: 50%;
+    height: 100px;
+    font-weight: 600;
+    word-spacing: 5px;
+    font-size: 19px;
+    margin: 0 auto 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .guild_wrapper {
+        width: 89%;
+        height: 400px;
+    }
+    .guild_container {
+        width: 100%;
+    }
+}
